@@ -29,7 +29,7 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: true,
-              localIdentName: '[name]__[local]__[hash:base64:5]'
+              localIdentName: '[name]__[local]__[hash:base64:5]',
             },
           },
           {
@@ -53,9 +53,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: `${__dirname  }/src/index.html`,
+      template: `${__dirname}/src/index.html`,
       filename: 'index.html',
-      inject: 'body'
+      inject: 'body',
     }),
   ],
 };

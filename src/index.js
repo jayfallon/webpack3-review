@@ -1,8 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import 'babel-polyfill';
 
-import "./index.css";
+import './index.css';
 
 const app = (
   <BrowserRouter>
@@ -10,4 +11,4 @@ const app = (
   </BrowserRouter>
 );
 
-ReactDOM.render(app, document.getElementById("root"));
+ReactDOM.render(app, document.getElementById('root'));
